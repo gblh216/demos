@@ -17,9 +17,9 @@ import ArrayTest from './demos/demo_5/ArrayTest';
 export default class App extends React.Component {
     render() {
         return (
-            // <List /> //列表数据变化对于子组件生命周期方法的影响
+            <List /> //列表数据变化对于子组件生命周期方法的影响
             // <AnimatedTest /> //动画展示
-            <FontTest /> //字体大小和尺寸关系的测试
+            // <FontTest /> //字体大小和尺寸关系的测试
             // <ViewTest /> //测量rn中的宽高和屏幕宽高的比例
             // <ArrayTest /> //数组浅拷贝测试
         );
