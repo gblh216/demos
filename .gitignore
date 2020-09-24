@@ -1,0 +1,11 @@
+node_modules
+android
+ios
+__tests__
+app.json
+babel.config.js
+index.js
+metro.config.js
+package-lock.json
+package.json
+.DS_Store
