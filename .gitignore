@@ -9,3 +9,5 @@ metro.config.js
 package-lock.json
 package.json
 .DS_Store
+yarn.lock
+.vscode
