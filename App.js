@@ -10,6 +10,7 @@ import LayoutAnimationTest from './demos/demo_6/LayoutAnimationTest';
 import KeyboardTest from './demos/demo_7/KeyboardTest';
 import SafeAreaTest from './demos/demo_8/SafeAreaTest';
 import StatusBar from './demos/demo_9/StatusBarTest';
+import Page from './demos/demo_10/Page';
 
 export default class App extends React.Component {
     render() {
@@ -22,7 +23,8 @@ export default class App extends React.Component {
             // <LayoutAnimationTest /> //LayoutAnimation API测试
             // <KeyboardTest /> //KeyboardAvoidingView的测试（避免键盘遮挡）
             // <SafeAreaTest /> //SafeAre仅对ios起作用，若不使用该组件，则ios的刘海屏设备会和内容出现冲突，而在小米刘海屏手机上，会自动避开刘海
-            <StatusBar /> //顶部状态栏的部分控制方法
+            // <StatusBar /> //顶部状态栏的部分控制方法
+            <Page /> //测试箭头函数是否影响继承，结论是不影响
         );
     }
 }
