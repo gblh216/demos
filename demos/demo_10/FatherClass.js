@@ -1,40 +1,32 @@
-import React from "react";
-import { Button, Text, StyleSheet, View } from "react-native";
+/*
+ * @Description:
+ * @Author: hekn
+ * @Date: 2020-10-10 10:09:28
+ * @LastEditors: hekn
+ * @LastEditTime: 2020-10-29 21:40:31
+ */
+'use strict';
 
-export default class FatherClass extends React.Component {
+import React from 'react';
+import {Text, StyleSheet} from 'react-native';
+import GrandFatherClass from './GrandFatherClass';
+
+export default class FatherClass extends GrandFatherClass {
     constructor() {
         super();
     }
 
-    render() {
-        return (
-            <View style={styles.container}>
-                {this.renderText()}
-                <Button title={'BUTTON'} onPress={this.onButtonPress} />
-            </View>
-        );
-    }
-
     renderText = () => {
-        return (<Text style={styles.textStyle}>FATHER</Text>);
-    }
+        return <Text style={styles.textStyle}>FATHER</Text>;
+    };
 
-    onButtonPress = () => {
+    onButtonPress() {
         console.log('LOG FATHER');
     }
-};
+}
 
 const styles = StyleSheet.create({
-    container: {
-        flex: 1,
-        justifyContent: 'center',
-    },
-
     textStyle: {
-        textAlign: 'center'
-    }
+        textAlign: 'center',
+    },
 });
-
-
-
-
